@@ -18,11 +18,13 @@ windows要打開Hyper-V才能跑起來<br>
 <!-- Dockerfile -->
 <!--
 FROM 環境:版號
-COPY 複製檔案位置 到哪裡
+COPY 複製檔案位置 到哪裡 
 -->
 FROM nginx
 COPY . /usr/share/nginx/html
 ```
+這讓我想到當兵時的站住口令<br>
+大概是當兵太精實一直在懷念...<br>
 
 docker Image 建立 html server
 ```
