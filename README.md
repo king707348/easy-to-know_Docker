@@ -1,8 +1,8 @@
 # 初入 Docker easy-to-know_Docker
 
 ### download Docker
-先到Docker官網下載: <a href="https://www.docker.com/">Docker Desktop</a> 並建立帳戶
-windows要打開Hyper-V才能跑起來
+先到Docker官網下載: <a href="https://www.docker.com/">Docker Desktop</a> 並建立帳戶<br>
+windows要打開Hyper-V才能跑起來<br>
 控制台/程式和功能/開啟或關閉windows功能 打開Hyper-V
 
 ### run docker
@@ -10,8 +10,8 @@ windows要打開Hyper-V才能跑起來
 ```
     docker pull nginx
 ```
-跑完後你會在Docker Desktop的Images看到nginx
-或是你習慣用cmd看 指令```docker images```列出Images
+跑完後你會在Docker Desktop的Images看到nginx<br>
+或是你習慣用cmd看 指令```docker images```列出Images<br>
 
 到資料夾建立index.html 和 Dockerfile
 ```
