@@ -19,7 +19,7 @@ windows要打開Hyper-V才能跑起來<br>
 <!--
 FROM 環境:版號
 COPY 複製檔案位置 到哪裡
->
+-->
 FROM nginx
 COPY . /usr/share/nginx/html
 ```
