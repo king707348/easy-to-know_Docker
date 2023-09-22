@@ -28,7 +28,7 @@ windows要打開Hyper-V才能跑起來<br>
 
 docker Image 建立 html server
 ```
-<!-- docker build -t name:版本號 docker位置 -->
+<!-- docker build -t {{REPOSITORY_NAME}}:{{VERSION}} {{DOCKER_LOCATION}} -->
     docker build -t html-server-image:v1 .
 ```
 ### run docker container
@@ -37,16 +37,25 @@ docker Image 建立 html server
     docker run -d -p 80:80 html-server-image:v1
 ```
 <hr>
+
 ### docker push
-```docker images``找到你要上傳檔案
-![09-22_006](https://github.com/king707348/easy-to-know_Docker/assets/48721403/a8c556ae-06dd-4f2c-a330-a741a7376f23)
+```docker images```找到你要上傳檔案<br>
+![09-22_006](https://github.com/king707348/easy-to-know_Docker/assets/48721403/a8c556ae-06dd-4f2c-a330-a741a7376f23)<br>
 如果沒tag記得賦予 才能上傳
 ```
-<!-- docker tag IMAGE_ID ACCOUNT_NAME/REPOSITORY_NAME:VERSION(如果沒給版本會顯示latest) -->
+<!-- docker tag {{IMAGE_ID}} {{ACCOUNT_NAME}}/{{REPOSITORY_NAME}}:{{VERSION}} -->
     docker tag ff6427fb7991 evanhsu1991/html-server-image:v1
 ```
+沒給版本會顯示latest變成你指定版號<br>
 最後用```docker push```指令就完成了
 ```
     docker push evanhsu1991/html-server-image:v1
 ```
 很多指令跟github很像 難怪很多說會github就會docker 但我還是花很多時間XD
+
+### docker save
+儲存到本機
+```
+<!-- docker save {{ACCOUNT_NAME}}/{{REPOSITORY_NAME}} -o {{SAVE_TYPE}} -->
+    docker save evanhsu1991/html-server-image:v1 -o js.tar  
+```
