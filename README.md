@@ -1,4 +1,4 @@
-# 初入 Docker easy-to-know_Docker
+# 初入 Docker easy-to-use_Docker
 
 ### download Docker
 先到Docker官網下載: <a href="https://www.docker.com/">Docker Desktop</a> 並建立帳戶<br>
